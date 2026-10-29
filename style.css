@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "Norse";
+    src: url(./fonts/Norse.woff) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NorseB";
+    src: url(./fonts/Norsebold.woff) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --beige: rgb(222, 236, 238);
+    --blue: rgb(58, 122, 189);
+    --dark-blue: rgb(44, 94, 166);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    min-width: 100vw;
+    background-color: var(--beige);
+}
+
+.left {
+    background-image: url("./546572177_17847863856557591_2196574683860414866_n.webp");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+}
+
+.logo-pic {
+    height: 13vh;
+    width: 5vw;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 35.3vw;
+    /*i gues this needs work!!!!!!!!!!*/
+
+    place-self: center;
+
+    display: flex;
+
+    margin-top: 20vh;
+    padding: 1.5em 9em;
+    box-sizing: border-box;
+}
+
+.logo>h1 {
+    font-family: "NorseB";
+    color: var(--beige);
+    font-size: 4em;
+}
+
+.right {
+    background-color: var(--beige);
+    height: fit-content;
+    width: auto;
+
+    align-content: center;
+
+    padding: 5vh 0;
+    padding-top: 12.5vh;
+
+
+}
+
+
+.right p:nth-of-type(2) {
+    margin: 2.5vh 0;
+}
+
+fieldset {
+    background-color: white;
+    border: 0;
+    box-shadow: 0 5px 5px rgba(117, 117, 117, 0.507);
+    padding: 2vh 5vw;
+}
+
+.container-field {
+    display: flex;
+
+    gap: 5vw;
+}
+
+label,
+input,
+p:last-of-type {
+    display: block;
+
+    font-weight: 400;
+    font-size: calc(font-size / 2);
+    border-radius: 5px;
+}
+
+label {
+    margin-top: 3vh;
+}
+
+input {
+    padding: 5px 10px;
+}
+
+.right p {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 1rem;
+}
+
+.right button {
+    margin: 3vh 5vw;
+    padding: 1em 2em;
+    background-color: var(--dark-blue);
+    color: var(--beige);
+    border-radius: 5px;
+    border: 0;
+}
+
+a {
+    color: var(--dark-blue);
+}
+
+.left a {
+    position: absolute;
+    bottom: 1em;
+    width: fit-content;
+    left: 7.5em;
+    color: var(--beige);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:required:user-invalid {
+    border-color: brown;
+}
+
+input:focus {
+    border-color: rgb(58, 122, 189);
+    box-shadow: 2.5px 2.5px 2.5px var(--blue);
+    outline: none;
+}
