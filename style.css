@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Norse";
-    src: url(./fonts/Norse.woff) format("opentype");
+    src: url(./Norse.woff) format("opentype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "NorseB";
-    src: url(./fonts/Norsebold.woff) format("opentype");
+    src: url(./Norsebold.woff) format("opentype");
     font-weight: 700;
     font-style: normal;
 }
