@@ -34,6 +34,7 @@
 
 .left {
     background-image: url("./546572177_17847863856557591_2196574683860414866_n.webp");
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: auto;
